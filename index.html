@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>中药记忆大师</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="app-container">
+      <app-header></app-header>
+      <main class="main-content">
+        <router-view></router-view>
+      </main>
+      <app-tab-bar></app-tab-bar>
+      <notification></notification>
+    </div>
+  </div>
+
+  <!-- Vue 3 + Vue Router CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
+
+  <!-- Data Layer -->
+  <script src="js/data/herbs.js"></script>
+  <script src="js/data/memory-groups.js"></script>
+  <script src="js/data/mnemonics.js"></script>
+  <script src="js/data/herb-pairs.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/storage.js"></script>
+  <script src="js/services/quiz-engine.js"></script>
+
+  <!-- Store & Router -->
+  <script src="js/store.js"></script>
+  <script src="js/router.js"></script>
+
+  <!-- Components -->
+  <script src="js/components/layout.js"></script>
+  <script src="js/components/browse.js"></script>
+  <script src="js/components/learning.js"></script>
+  <script src="js/components/quiz.js"></script>
+
+  <!-- App Entry -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Temp files
+*.tmp
+~$*
+
+# Temp files
+*.tmp
+~$*
+.claude/
+*.jpg
+*.docx
