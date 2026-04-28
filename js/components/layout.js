@@ -17,7 +17,13 @@
       }
     },
     methods: {
-      goBack: function() { this.$router.back(); }
+      goBack: function() {
+        if (this.$route.name === 'herb-detail') {
+          this.$router.push('/browse');
+        } else {
+          this.$router.back();
+        }
+      }
     }
   };
 
